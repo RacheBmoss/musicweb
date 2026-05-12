@@ -3,6 +3,8 @@
     { "id": "1", "title": "Wolf", "artist": "Tyler The Creator", "rating": "liked", "genre": "Alt Hip-Hop" },
     { "id": "2", "title": "MM..FOOD", "artist": "MF DOOM", "rating": "liked", "genre": "Alt Hip-Hop" },
     { "id": "3", "title": "channel ORANGE", "artist": "Frank Ocean", "rating": "liked", "genre": "Alt R&B" }
+    { "id": "4", "title": "My Ghosts Go Ghost", "artist": "By Storm", "rating": "neutral", "genre": "Experimental Hip-Hop" }
+    { "id": "5", "title": "The Fall-Off", "artist": "J. Cole", "rating": "neutral", "genre": "Alt Hip-Hop" }
   ],
   "links": [
     { "source": "1", "target": "2" },
