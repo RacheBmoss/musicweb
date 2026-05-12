@@ -3,10 +3,30 @@
 <head>
     <title>My 2026 Album Web</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; display: flex; height: 100vh; font-family: sans-serif; background: #0f172a; color: white; }
+        #cy { flex-grow: 1; height: 100%; }
+        #sidebar { width: 300px; background: #1e293b; padding: 20px; border-left: 1px solid #334155; }
+        .controls { display: flex; flex-direction: column; gap: 10px; }
+        button { padding: 10px; cursor: pointer; border: none; border-radius: 4px; }
+        .like { background: #8B5CF6; color: white; }
+        .dislike { background: #ef4444; color: white; }
+        .neutral { background: #64748b; color: white; }
+    </style>
 </head>
 <body>
     <div id="cy"></div>
+    <div id="sidebar">
+        <h2 id="album-title">Select an Album</h2>
+        <p id="album-artist"></p>
+        <div class="controls" id="controls" style="display:none;">
+            <button class="like" onclick="updateRating('liked')">Like (Purple)</button>
+            <button class="neutral" onclick="updateRating('neutral')">Neutral</button>
+            <button class="dislike" onclick="updateRating('dislike')">Dislike</button>
+        </div>
+        <hr>
+        <button onclick="exportData()" style="width:100%; margin-top:20px;">Copy JSON to Update Repo</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
